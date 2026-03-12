@@ -1,0 +1,9 @@
+nltk
+scikit-learn
+streamlit
+openai-whisper
+torch
+sentence-transformers
+supabase
+pymupdf4llm
+google-generativeai

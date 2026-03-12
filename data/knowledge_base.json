@@ -1,0 +1,32 @@
+[
+  {
+    "concept_id": "os_paging",
+    "concept_name": "Paging",
+    "ideal_answer": "Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory. This scheme permits the physical address space of a process to be non-contiguous. It uses page tables to translate logical addresses to physical addresses, avoiding external fragmentation.",
+    "keywords": ["page", "frame", "page table", "logical address", "physical address", "non-contiguous", "fragmentation"]
+  },
+  {
+    "concept_id": "os_deadlock",
+    "concept_name": "Deadlock",
+    "ideal_answer": "A deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource held by some other process. The four necessary conditions are mutual exclusion, hold and wait, no preemption, and circular wait.",
+    "keywords": ["blocked", "resource", "mutual exclusion", "hold and wait", "no preemption", "circular wait", "Banker's algorithm"]
+  },
+  {
+    "concept_id": "os_cpu_scheduling",
+    "concept_name": "CPU Scheduling",
+    "ideal_answer": "CPU scheduling is the process of selecting a process from the ready queue to execute on the CPU. It aims to maximize CPU utilization and throughput. Algorithms include FCFS, SJF, and Round Robin which uses time-sharing via a fixed time quantum.",
+    "keywords": ["ready queue", "burst time", "preemption", "time quantum", "starvation", "throughput", "context switch"]
+  },
+  {
+    "concept_id": "os_page_replacement",
+    "concept_name": "Page Replacement",
+    "ideal_answer": "Page replacement algorithms decide which memory page to swap out when a page fault occurs and physical memory is full. Examples include FIFO, which replaces the oldest page, and LRU, which replaces the least recently used page to minimize future page faults.",
+    "keywords": ["page fault", "victim page", "FIFO", "LRU", "Belady's Anomaly", "thrashing", "swapping"]
+  },
+  {
+    "concept_id": "os_virtual_memory",
+    "concept_name": "Virtual Memory",
+    "ideal_answer": "Virtual memory is a technique that allows the execution of processes that are not completely in main memory. It gives the illusion of a very large memory by using secondary storage (disk) as an extension of RAM, typically implemented via demand paging.",
+    "keywords": ["secondary storage", "demand paging", "RAM", "address space", "page file", "swap space"]
+  }
+]
