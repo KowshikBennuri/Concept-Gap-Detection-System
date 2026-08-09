@@ -68,3 +68,10 @@ class DatabaseManager:
             """) \
             .eq("knowledge_base.subjects.faculty_id", faculty_id) \
             .execute()
+    
+    # --- ADD THIS TO DatabaseManager CLASS ---
+    def delete_concept(self, concept_id):
+        """
+        Allows faculty to remove a specific concept from the knowledge base.
+        """
+        return self.supabase.table("knowledge_base").delete().eq("id", concept_id).execute()

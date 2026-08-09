@@ -26,16 +26,21 @@ def process_document_to_kb(file_path, subject_name):
 
     # 5. Build the Expert Prompt
     prompt = f"""
-    Act as an expert professor in {subject_name}. 
-    Analyze the provided lecture materials and extract the 3-5 most critical concepts.
-    
+    Act as an expert professor in {subject_name}.
+    Analyze the lecture material and extract the 3-5 most critical concepts for theoretical concepts and in case of numerical/problem-solving topics, extract it as only one concept.
+
+    Important for numerical/problem-solving topics:
+    - Preserve equations/formulas exactly if they appear in the source.
+    - Include stepwise solution language in the ideal answer when relevant.
+    - Keep technical symbols (like V, I, R, sigma, integral, derivative) when present.
+
     Return ONLY a valid JSON list. Each object must have:
-    - "concept_name": Short title.
-    - "ideal_answer": 3-sentence technical explanation.
-    - "keywords": List of exactly 7 essential technical terms.
-    
+    - "concept_name": short title
+    - "ideal_answer": 3-5 sentence explanation that can guide scoring of student verbal answers, including formula context where needed
+    - "keywords": exactly 7 key terms, and include formula tokens/units when numericals are involved
+
     Material:
-    {md_text[:9000]} 
+    {md_text[:9000]}
     """
     
     try:
