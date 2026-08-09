@@ -79,7 +79,8 @@ pip install -r requirements.txt
 
 #### Clone or copy the repo.
 
-- Create and activate a Python virtual environment. ## Install dependencies:
+- Create and activate a Python virtual environment.
+- Install dependencies:
 
 ```bash 
 python -m venv .venv .\.venv\Scripts\activate pip install -r requirements.txt 
@@ -90,7 +91,9 @@ python -m venv .venv .\.venv\Scripts\activate pip install -r requirements.txt
 #### Prepare Streamlit secrets in secrets.toml:
 
 ```toml 
-SUPABASE_URL = *your_supabase_url_here* SUPABASE_KEY = *your_supabase_key_here* GEMINI_API_KEY = *your_api_key_here* 
+SUPABASE_URL = *your_supabase_url_here*
+SUPABASE_KEY = *your_supabase_key_here*
+GEMINI_API_KEY = *your_api_key_here* 
 ```
 
 #### Configure Supabase with the required tables and policies.
