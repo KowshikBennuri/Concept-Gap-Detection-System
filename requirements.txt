@@ -7,3 +7,10 @@ sentence-transformers
 supabase
 pymupdf4llm
 google-generativeai
+numpy
+pandas
+ffmpeg-python
+rouge-score 
+evaluate 
+bert-score 
+pydub
